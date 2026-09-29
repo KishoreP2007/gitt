@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GITT - About</title>
+
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            GITT
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="home_page.html">
+                Home
+            </a>
+
+            <a href="about.html" class="active">
+                About
+            </a>
+
+            <a href="#" onclick="logout()">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- About -->
+
+    <main>
+
+
+        <section class="about-hero">
+
+            <div class="about-icon">
+                ☁
+            </div>
+
+            <h1>
+                About GITT
+            </h1>
+
+            <p>
+                GITT is a cloud technology platform designed
+                to help users explore and understand
+                different cloud computing platforms.
+            </p>
+
+        </section>
+
+
+
+        <section class="content-section">
+
+
+            <div class="content-card">
+
+                <h2>
+                    What is GITT?
+                </h2>
+
+                <p>
+
+                    GITT provides a simple interface for
+                    exploring major cloud platforms such as
+                    Amazon Web Services, Google Cloud Platform
+                    and Microsoft Azure.
+
+                </p>
+
+                <p>
+
+                    Users can explore cloud services related
+                    to computing, storage, databases,
+                    networking and serverless computing.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="content-card">
+
+                <h2>
+                    Our Purpose
+                </h2>
+
+                <p>
+
+                    The purpose of GITT is to make cloud
+                    computing concepts easier to understand
+                    and provide users with a convenient way
+                    to explore cloud services.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Providers -->
+
+        <section class="providers">
+
+            <h2>
+                Supported Cloud Platforms
+            </h2>
+
+
+            <div class="provider-container">
+
+
+                <div class="provider-card aws">
+
+                    <h3>
+                        AWS
+                    </h3>
+
+                    <p>
+                        Amazon Web Services
+                    </p>
+
+                </div>
+
+
+                <div class="provider-card gcp">
+
+                    <h3>
+                        GCP
+                    </h3>
+
+                    <p>
+                        Google Cloud Platform
+                    </p>
+
+                </div>
+
+
+                <div class="provider-card azure">
+
+                    <h3>
+                        Azure
+                    </h3>
+
+                    <p>
+                        Microsoft Azure
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+                © 2026 GITT - Cloud Technology Platform
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <script>
+
+        // Protect About page
+
+        if (
+            sessionStorage.getItem("loggedIn")
+            !== "true"
+        ) {
+
+            window.location.href = "index.html";
+
+        }
+
+
+        // Logout
+
+        function logout() {
+
+            sessionStorage.removeItem("loggedIn");
+
+            sessionStorage.removeItem("username");
+
+            window.location.href = "index.html";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

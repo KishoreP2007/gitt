@@ -2,11 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GITT - Login</title>
+
     <link rel="stylesheet" href="index.css">
+
 </head>
+
 
 <body>
 
@@ -14,43 +20,69 @@
 
         <div class="login-box">
 
-            <h1>Welcome to GITT</h1>
-            <p class="subtitle">Login to continue</p>
+            <div class="logo">
+                GITT
+            </div>
 
-            <form action="home_page.html">
+            <h1>Welcome Back</h1>
+
+            <p class="subtitle">
+                Login to explore cloud platforms
+            </p>
+
+
+            <form onsubmit="login(event)">
 
                 <div class="input-group">
-                    <label for="username">Username</label>
+
+                    <label for="username">
+                        Username
+                    </label>
+
                     <input
                         type="text"
                         id="username"
                         placeholder="Enter your username"
                         required
                     >
+
                 </div>
 
+
                 <div class="input-group">
-                    <label for="password">Password</label>
+
+                    <label for="password">
+                        Password
+                    </label>
+
                     <input
                         type="password"
                         id="password"
                         placeholder="Enter your password"
                         required
                     >
+
                 </div>
 
-                <button type="submit">Login</button>
+
+                <button type="submit">
+                    Login
+                </button>
 
             </form>
 
-            <p class="signup">
-                Don't have an account? <a href="#">Sign up</a>
+
+            <p class="login-info">
+                Explore AWS, GCP and Microsoft Azure
             </p>
 
         </div>
 
     </div>
 
-</body>
-</html>
 
+    <script src="login.js"></script>
+
+</body>
+
+</html>
