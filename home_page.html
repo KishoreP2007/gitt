@@ -1,0 +1,122 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GITT - Cloud Platforms</title>
+
+    <link rel="stylesheet" href="home_page.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            GITT
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="#">About</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="hero">
+
+            <h1>Cloud Computing Platforms</h1>
+
+            <p>
+                Choose a cloud platform to explore its services
+                and capabilities.
+            </p>
+
+        </section>
+
+
+        <!-- Cloud Cards -->
+        <section class="cloud-container">
+
+            <!-- AWS -->
+            <div class="cloud-card">
+
+                <div class="cloud-icon aws">
+                    AWS
+                </div>
+
+                <h2>Amazon Web Services</h2>
+
+                <p>
+                    Explore AWS cloud services including EC2,
+                    S3, RDS, Lambda and more.
+                </p>
+
+                <button onclick="selectCloud('AWS')">
+                    Explore AWS
+                </button>
+
+            </div>
+
+
+            <!-- GCP -->
+            <div class="cloud-card">
+
+                <div class="cloud-icon gcp">
+                    GCP
+                </div>
+
+                <h2>Google Cloud Platform</h2>
+
+                <p>
+                    Explore Google Cloud services including
+                    Compute Engine, Cloud Storage and BigQuery.
+                </p>
+
+                <button onclick="selectCloud('GCP')">
+                    Explore GCP
+                </button>
+
+            </div>
+
+
+            <!-- Azure -->
+            <div class="cloud-card">
+
+                <div class="cloud-icon azure">
+                    AZ
+                </div>
+
+                <h2>Microsoft Azure</h2>
+
+                <p>
+                    Explore Azure services including Virtual
+                    Machines, Blob Storage and Azure Functions.
+                </p>
+
+                <button onclick="selectCloud('Azure')">
+                    Explore Azure
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>
+```
