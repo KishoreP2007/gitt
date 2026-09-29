@@ -1,65 +1,145 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>GITT - Cloud Platforms</title>
 
     <link rel="stylesheet" href="home_page.css">
+
 </head>
+
 
 <body>
 
-    <!-- Navigation Bar -->
+
+    <!-- Navigation -->
+
     <nav class="navbar">
 
         <div class="logo">
             GITT
         </div>
 
+
         <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="#">About</a>
-            <a href="index.html">Logout</a>
+
+            <a href="home_page.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="#" onclick="logout()">
+                Logout
+            </a>
+
         </div>
 
     </nav>
 
 
-    <!-- Main Content -->
+
+    <!-- Main -->
+
     <main>
+
+
+        <!-- Hero -->
 
         <section class="hero">
 
-            <h1>Cloud Computing Platforms</h1>
+            <h1>
+                Cloud Computing Platforms
+            </h1>
 
             <p>
-                Choose a cloud platform to explore its services
-                and capabilities.
+                Welcome,
+                <span id="username"></span>
+            </p>
+
+            <p>
+                Explore popular cloud providers and their services.
             </p>
 
         </section>
 
 
-        <!-- Cloud Cards -->
+
+        <!-- Cloud Providers -->
+
         <section class="cloud-container">
 
+
             <!-- AWS -->
+
             <div class="cloud-card">
 
                 <div class="cloud-icon aws">
                     AWS
                 </div>
 
-                <h2>Amazon Web Services</h2>
+                <h2>
+                    Amazon Web Services
+                </h2>
 
-                <p>
-                    Explore AWS cloud services including EC2,
-                    S3, RDS, Lambda and more.
+                <p class="description">
+
+                    Cloud services provided by Amazon for
+                    computing, storage, databases,
+                    networking and more.
+
                 </p>
+
+
+                <h3>
+                    Popular Services
+                </h3>
+
+
+                <div class="services">
+
+                    <div class="service">
+                        <strong>EC2</strong>
+                        <span>Virtual Servers</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>S3</strong>
+                        <span>Object Storage</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>RDS</strong>
+                        <span>Managed Database</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Lambda</strong>
+                        <span>Serverless Computing</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>VPC</strong>
+                        <span>Virtual Network</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>CloudFront</strong>
+                        <span>Content Delivery</span>
+                    </div>
+
+                </div>
+
 
                 <button onclick="selectCloud('AWS')">
                     Explore AWS
@@ -68,19 +148,67 @@
             </div>
 
 
+
             <!-- GCP -->
+
             <div class="cloud-card">
 
                 <div class="cloud-icon gcp">
                     GCP
                 </div>
 
-                <h2>Google Cloud Platform</h2>
+                <h2>
+                    Google Cloud Platform
+                </h2>
 
-                <p>
-                    Explore Google Cloud services including
-                    Compute Engine, Cloud Storage and BigQuery.
+                <p class="description">
+
+                    Google's cloud platform providing
+                    computing, storage, databases,
+                    AI and data analytics.
+
                 </p>
+
+
+                <h3>
+                    Popular Services
+                </h3>
+
+
+                <div class="services">
+
+                    <div class="service">
+                        <strong>Compute Engine</strong>
+                        <span>Virtual Machines</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Cloud Storage</strong>
+                        <span>Object Storage</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Cloud SQL</strong>
+                        <span>Managed Database</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Cloud Functions</strong>
+                        <span>Serverless Computing</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>VPC</strong>
+                        <span>Virtual Network</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>BigQuery</strong>
+                        <span>Data Analytics</span>
+                    </div>
+
+                </div>
+
 
                 <button onclick="selectCloud('GCP')">
                     Explore GCP
@@ -89,25 +217,74 @@
             </div>
 
 
+
             <!-- Azure -->
+
             <div class="cloud-card">
 
                 <div class="cloud-icon azure">
                     AZ
                 </div>
 
-                <h2>Microsoft Azure</h2>
+                <h2>
+                    Microsoft Azure
+                </h2>
 
-                <p>
-                    Explore Azure services including Virtual
-                    Machines, Blob Storage and Azure Functions.
+                <p class="description">
+
+                    Microsoft's cloud platform offering
+                    computing, storage, databases,
+                    networking and AI services.
+
                 </p>
+
+
+                <h3>
+                    Popular Services
+                </h3>
+
+
+                <div class="services">
+
+                    <div class="service">
+                        <strong>Virtual Machines</strong>
+                        <span>Cloud Computing</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Blob Storage</strong>
+                        <span>Object Storage</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Azure SQL</strong>
+                        <span>Managed Database</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Azure Functions</strong>
+                        <span>Serverless Computing</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Virtual Network</strong>
+                        <span>Cloud Networking</span>
+                    </div>
+
+                    <div class="service">
+                        <strong>Azure CDN</strong>
+                        <span>Content Delivery</span>
+                    </div>
+
+                </div>
+
 
                 <button onclick="selectCloud('Azure')">
                     Explore Azure
                 </button>
 
             </div>
+
 
         </section>
 
@@ -119,4 +296,3 @@
 </body>
 
 </html>
-```

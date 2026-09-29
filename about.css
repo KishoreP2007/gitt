@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f7fb;
+
+    color: #222;
+}
+
+
+/* Navigation */
+
+.navbar {
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: white;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #667eea;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-size: 15px;
+
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+
+    color: #667eea;
+
+}
+
+
+/* Hero */
+
+.about-hero {
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+    color: white;
+
+}
+
+
+.about-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.2);
+
+    font-size: 40px;
+
+}
+
+
+.about-hero h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.about-hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+}
+
+
+/* Content */
+
+.content-section {
+
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    padding: 0 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.content-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.07);
+
+}
+
+
+.content-card h2 {
+
+    color: #667eea;
+
+    margin-bottom: 15px;
+
+}
+
+
+.content-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Providers */
+
+.providers {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+}
+
+
+.providers h2 {
+
+    margin-bottom: 30px;
+
+}
+
+
+.provider-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.provider-card {
+
+    width: 250px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+
+}
+
+
+.provider-card:hover {
+
+    transform: translateY(-7px);
+
+}
+
+
+.provider-card h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.provider-card p {
+
+    color: #777;
+
+}
+
+
+.provider-card.aws h3 {
+
+    color: #ff9900;
+
+}
+
+
+.provider-card.gcp h3 {
+
+    color: #4285f4;
+
+}
+
+
+.provider-card.azure h3 {
+
+    color: #0078d4;
+
+}
+
+
+/* Footer */
+
+footer {
+
+    margin-top: 50px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #222;
+
+    color: #aaa;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .content-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-hero h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .navbar {
+
+        padding: 0 5%;
+
+    }
+
+
+    .nav-links {
+
+        gap: 12px;
+
+    }
+
+}
